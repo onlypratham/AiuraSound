@@ -1,0 +1,52 @@
+{
+    "data_file": "278k_song_labelled.csv",
+    "target_column": "labels",
+    "feature_columns": [
+        "duration (ms)",
+        "danceability",
+        "energy",
+        "loudness",
+        "speechiness",
+        "acousticness",
+        "instrumentalness",
+        "liveness",
+        "valence",
+        "tempo",
+        "spec_rate"
+    ],
+    "classes": [
+        0,
+        1,
+        2,
+        3
+    ],
+    "label_to_mood": {
+        "0": "sad",
+        "1": "happy",
+        "2": "energetic",
+        "3": "calm"
+    },
+    "mood_to_label": {
+        "sad": 0,
+        "happy": 1,
+        "energetic": 2,
+        "calm": 3
+    },
+    "model_file": "mood_pipeline.joblib",
+    "model_type": "RandomForestClassifier",
+    "test_size": 0.2,
+    "random_state": 42,
+    "feature_importance": {
+        "instrumentalness": 0.22496672827224684,
+        "energy": 0.21902823166893007,
+        "acousticness": 0.1659714026565861,
+        "loudness": 0.1099691087868552,
+        "danceability": 0.08603816496880072,
+        "valence": 0.048792787830538226,
+        "spec_rate": 0.04513569913080285,
+        "speechiness": 0.039109439148995145,
+        "tempo": 0.02403023574955063,
+        "duration (ms)": 0.021600883090785672,
+        "liveness": 0.015357318695908439
+    }
+}
